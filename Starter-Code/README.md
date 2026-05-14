@@ -369,6 +369,19 @@ Starter-Code/
 
 ## Running the App
 
+### Getting the Code
+
+> **Do not use "Download ZIP" from GitHub** — it does not include the ML model file (stored via Git LFS).
+
+Clone the repo instead:
+```powershell
+git clone https://github.com/MuhammadMustafa23/MindCore-AI-Powered-Mental-Health-Analysis-Desktop-App.git
+```
+
+Git LFS will automatically download the real `model.safetensors` (255 MB) during clone. If Git LFS is not installed, get it from [git-lfs.com](https://git-lfs.com) first.
+
+---
+
 ### Prerequisites
 
 | Requirement | Version |
@@ -376,7 +389,19 @@ Starter-Code/
 | Java JDK | 21 |
 | Apache Maven | 3.6+ |
 | Python | 3.10+ |
+| Git LFS | Any (for model download) |
 | (Optional) CUDA GPU | For faster inference |
+
+### Windows PowerShell — Unblock Script
+
+If you see *"cannot be loaded, not digitally signed"* when running `run.ps1`, run these once:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Unblock-File -Path .\run.ps1
+```
+
+Then proceed normally with `.\run.ps1 run`.
 
 ### Environment Setup (Required for AI Report)
 

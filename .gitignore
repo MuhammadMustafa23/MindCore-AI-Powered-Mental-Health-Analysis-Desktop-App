@@ -33,5 +33,5 @@ build/
 *.bin
 
 # Docs/submission folders
-DOCX/
-Model/
+/DOCX/
+/Model/

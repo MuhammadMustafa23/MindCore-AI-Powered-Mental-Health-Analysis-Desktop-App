@@ -57,6 +57,15 @@ Prediction  {label, confidence, severity, colour}
 Stored in SQLite  →  Dashboard, History, Recommendations updated
 ```
 
+![Main Dashboard](MindCore/dashboard.png)
+![New Analysis](MindCore/newan.png)
+![History Analysis](MindCore/hist.png)
+![Mood Tracking](MindCore/mood.png)
+![Recommendations](MindCore/rec.png)
+![Profile Screen](MindCore/prof1.png)
+![Profile Data](MindCore/prof2.png)
+![About Page](MindCore/about.png)
+
 ### Screens
 
 | Screen | Purpose |

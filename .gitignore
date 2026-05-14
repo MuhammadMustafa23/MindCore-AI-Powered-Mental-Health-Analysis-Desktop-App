@@ -1,0 +1,37 @@
+# Java
+*.class
+*.jar
+target/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+.DS_Store
+bin/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Database
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled app distribution (share via GitHub Releases instead)
+MentalHealthApp/
+*.zip
+dist/
+build/
+
+# Large ML model files (tracked via Git LFS, not ignored)
+*.bin
+
+# Docs/submission folders
+DOCX/
+Model/

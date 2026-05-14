@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run JavaFX App",
+            "request": "launch",
+            "mainClass": "com.mentalhealth.Main",
+            "projectName": "mental-health-app",
+            "vmArgs": "--module-path ${env:PATH_TO_FX} --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Debug JavaFX App",
+            "request": "launch",
+            "mainClass": "com.mentalhealth.Main",
+            "projectName": "mental-health-app",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Flask API",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/python-api/app.py",
+            "cwd": "${workspaceFolder}/python-api",
+            "env": {
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "1"
+            },
+            "jinja": true
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Full Stack (Flask + JavaFX)",
+            "configurations": ["Python: Flask API", "Run JavaFX App"]
+        }
+    ]
+}
